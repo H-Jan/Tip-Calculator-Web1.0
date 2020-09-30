@@ -1,0 +1,86 @@
+
+   body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   
+   .calculator {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+   }
+
+    
+     h1 {
+      color: cream;
+      font-size: 30px;
+      text-align: center;
+     }
+    
+    main {
+     flex: 1 1 100%;
+     overflow-y: scroll;
+     padding: 20px 15px;
+    }
+     
+    .input-group {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+     input {
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      border-bottom: 4px solid aquamarine;
+      color: black;
+      font-size: 18px;
+     }
+     
+     
+     select {
+      display: block;
+      width: 100%;
+      border-bottom: 4px solid aquamarine;
+      color:black;
+      font-size: 16px;
+      padding: 10px 15px;
+   
+     }
+     
+     .tip-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+     .total-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+      
+     button {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      color: cream;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+     }
+

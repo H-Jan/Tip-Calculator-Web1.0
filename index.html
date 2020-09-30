@@ -1,10 +1,47 @@
 <!DOCTYPE HTML>
 <html>
 
-<head> 
-
-</head>
-
+<head>
 <body>
-    
+
+
+    <div class="application">
+        <div class="calculator">
+            <header>
+                <h1>Tip Calculator</h1>
+            </header>
+            <main>
+                <section class="options">
+                    <div class="input-group">
+                        <input type="number" class="bill" placeholder="What Was the Total Bill?" />
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="percentage" placeholder="What percentage would you like?" />
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="people" placeholder="How many are sharing the bill?" />
+                    </div>
+                </section>
+                <section class="tip-wrap">
+                    <p> You should tip: </p>
+                    <h3 class="tip">$</h3>
+                </section>
+                <!-- This is inclusion of total -->
+                <section class="total-section">
+                    <p> Your total is: </p>
+                    <h4 class="total">$</h4>
+                </section>
+
+            </main>
+            <footer>
+                <button id="tip-btn">Tip</button>
+                <!-- Inclusion of Button Total-->
+                <button id="total-btn">Total</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="resources/script.js" type="module"></script>
+
 </body>
+</head>
