@@ -6,7 +6,7 @@ const tip_btn = document.querySelector('#tip-btn');
 const total_btn = document.querySelector('#total-btn')
 
 tip_btn.addEventListener('click', calc_tip);
-total_btn.addEventListener('clicl', calc_total);
+total_btn.addEventListener('click', calc_total);
 
 function calc_tip () {
  let bill = Number(bill_input.value);
@@ -14,13 +14,17 @@ function calc_tip () {
  let people = Number(people_input.value);
  let tip = (bill * percentage) / people;
  
- let tip_calc = document.querySelector('.tip-wrap .tip');
+ let tip_calc = document.querySelector('.tip-section .tip');
  tip_calc.innerText = '$' + tip.toFixed(2) + ((people > 1) ? ' per person' : '');
+ // The above loop format was learned onlinex as an append should the value of people be greater than 1
 }
 
+// The below line of code is proving troublesome in connecting the Total Button to its desired function.
+// The main issue is the loss of function fo rdefined variables, being left undefined or unused. 
 function calc_total () {
-    let bill = Number(bill_input.value);
-    let total = Number(calc_tip.value) + bill;
+ bill_input + calc_tip;
 
-total.innerText = '$' + total.toFixed(2)
+ let total = document.querySelector('.total-selection .totality');
+ total.innerText = '$' 
 }
+
